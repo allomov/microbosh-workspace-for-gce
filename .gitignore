@@ -1,0 +1,12 @@
+*.log
+*.p12
+*.pem
+stemcells/*.tar.gz
+stemcells/*.tgz
+.DS_Store
+._.DS_Store
+bosh-registry.log
+registrydb.sqlite
+registry.yml
+bosh-deployments.yml
+restart_deployment.sh

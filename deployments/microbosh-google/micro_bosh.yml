@@ -1,0 +1,37 @@
+---
+name: microbosh-google
+
+logging:
+  level: DEBUG
+
+network:
+  type: dynamic
+
+resources:
+  persistent_disk: 16384
+  cloud_properties:
+    instance_type: n1-standard-1
+
+cloud:
+  plugin: google
+  properties:
+    google:
+      compute:
+        client_email: <google-cloud-engine-client-email>
+        project: <google-cloud-engine-client-email>
+        key_location: <google-cloud-engine-key-path>
+      storage:
+        access_key: <google-storage-access-key>
+        secret: <google-storage-secret>
+
+apply_spec:
+  properties:
+    director:
+      max_threads: 3
+      snapshot_schedule: false
+      self_snapshot_schedule: false
+    hm:
+      resurrector_enabled: true
+    ntp:
+      - 0.north-america.pool.ntp.org
+      - 1.north-america.pool.ntp.org
