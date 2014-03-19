@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-bosh_path = "/home/lomov/work/github/bosh"
+bosh_path = "<path-to-folder-with-bosh>"
 
 gem "bosh_cli", path: "#{bosh_path}/bosh_cli"
 gem "bosh_cli_plugin_micro", path: "#{bosh_path}/bosh_cli_plugin_micro"
