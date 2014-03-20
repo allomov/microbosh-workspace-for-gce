@@ -24,6 +24,8 @@ cloud:
         access_key: <google-storage-access-key>
         secret: <google-storage-secret>
 
+      private_key: <path-to-microbosh-private-key>
+
 apply_spec:
   properties:
     director:

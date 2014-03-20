@@ -12,6 +12,4 @@ gem "bosh_google_cpi", path: "#{bosh_path}/bosh_google_cpi"
 gem "bosh_openstack_cpi", path: "#{bosh_path}/bosh_openstack_cpi"
 gem "bosh_aws_cpi", path: "#{bosh_path}/bosh_aws_cpi"
 
-# gem 'bosh', git: 'https://github.com/Altoros/bosh.git', branch: 'google-cpi-microbosh'
-
 gem "rake"
