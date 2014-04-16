@@ -11,9 +11,7 @@ Clone this project to `~/bosh-workspace` folder (this path is just recomentation
 
 After it you'll need to clone Altoros [fork](https://github.com/Altoros/bosh) of `bosh` and checkout `google-cpi-microbosh` branch. Following commands:
 ```
-git clone https://github.com/Altoros/bosh.git
-cd bosh 
-git checkout -b google-cpi-microbosh origin/google-cpi-microbosh 
+git clone https://github.com/Altoros/bosh.git -b google-cpi-microbosh ~/workspace/bosh
 ```
 
 Change path to bosh folder inside [Gemfile](https://github.com/allomov/microbosh-workspace-for-gce/blob/master/Gemfile#L3). And run `bundle install` from this folder.
